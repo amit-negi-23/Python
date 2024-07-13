@@ -32,3 +32,13 @@ num += 10
 
 print(num)
 
+
+#Logical operator 
+a = 50
+b = 30
+print(not False)
+print(not (a > b))
+
+print("and Operator:", True and False)
+print ("or operator:", True or False)
+
