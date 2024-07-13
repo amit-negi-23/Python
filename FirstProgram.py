@@ -1,44 +1,14 @@
-#Arithmetic operators
-
+#type conversion
 a = 5
-b = 2
+b = 2.55
 
 print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a % b)
-print(a ** b)
 
 
+a = int("5")
+b = 3.25
 
-#Relational Operators
-a = 50
-b = 20
+print(a + b)
 
-print(a == b)  #False
-print(a != b)  #True
-print(a >= b)  #True
-print( a > b)  #True
-print(a <= b)  #false
-
-
-#Assignment Operator
-
-num = 10
-num += 10
-
-#   -= , *= , /= , %= , **= 
-
-print(num)
-
-
-#Logical operator 
-a = 50
-b = 30
-print(not False)
-print(not (a > b))
-
-print("and Operator:", True and False)
-print ("or operator:", True or False)
-
+age = str(24)
+print(type(age))
