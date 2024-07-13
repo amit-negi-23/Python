@@ -15,3 +15,18 @@ name3 = '''AN'''
 print(name1)
 print(name2)
 print(name3)
+
+age = 24
+print(age)
+
+pi = 3.14
+print(pi)
+
+isAdult = True
+print(isAdult)
+
+isLoggedIn = False
+print(isLoggedIn)
+
+abcd = None
+print(abcd)
