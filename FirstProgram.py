@@ -7,14 +7,9 @@
 5) None
 
 """
-name = "Amit Negi"
-age =24
-marks = 92.5
-isAdult = True
-bio = None
 
-print(type(name))
-print(type(age))
-print(type(marks))
-print(type(isAdult))
-print(type(bio))
+#Single line comment
+
+"""
+This is multi-line comment
+"""
