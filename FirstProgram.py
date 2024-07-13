@@ -21,3 +21,11 @@ print(a != b)  #True
 print(a >= b)  #True
 print( a > b)  #True
 print(a <= b)  #false
+
+
+#Assignment Operator
+
+num = 10
+num += 10
+
+print(num)
