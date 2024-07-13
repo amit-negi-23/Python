@@ -28,4 +28,7 @@ print(a <= b)  #false
 num = 10
 num += 10
 
+#   -= , *= , /= , %= , **= 
+
 print(num)
+
