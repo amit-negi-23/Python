@@ -1,3 +1,8 @@
-str1 = "This is a String."
-str2 = 'Amit negi'
-str3 = """this is a string"""
+str1 = "This is a String.\n Hello World!"
+
+print(str1)
+
+#escape sequence characters
+#  \n  = next line
+#  \t  = tab space
+
