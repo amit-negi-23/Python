@@ -1,9 +1,11 @@
+#length of string
+
 str1 = "Amit"
+print(len(str1))
+
 str2 = "Negi"
+print(len(str2))
 
-full_name = str1 + " "+ str2
-
-print(full_name)
 
 
 
