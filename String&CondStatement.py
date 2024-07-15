@@ -1,8 +1,9 @@
-str1 = "This is a String.\n Hello World!"
+str1 = "Amit"
+str2 = "Negi"
 
-print(str1)
+full_name = str1 + " "+ str2
 
-#escape sequence characters
-#  \n  = next line
-#  \t  = tab space
+print(full_name)
+
+
 
