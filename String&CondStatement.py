@@ -1,14 +1,23 @@
-#Practice Questions :
+# Conditional Statement 
 
-# Q1 : WAP to input user first name & print its length.
+age = 20
 
-name = input("Enter your name: ")
+if(age>=18):
+    print("can vote")
+else:
+    print("can't vote")
+    
 
-print("length of name= ", len(name))
 
+# example 2
 
-# Q2 WAP to find occurrence of $ in a string 
+light = "green"
 
-demo = "Hey$ , whats$Going on $Are you enjoying . whats up buddy $$"
-
-print("total $ count", demo.count("$"))
+if(light =="red"):
+    print("Stop")
+elif(light =="green"):
+    print("Go")
+elif(light == "yellow"):
+    print("Wait")
+else:
+    print("light is broken")
