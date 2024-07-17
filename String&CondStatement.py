@@ -1,26 +1,14 @@
-msg = "i am learning Python myself"
-print(msg)
-print(len(msg))
+#Practice Questions :
+
+# Q1 : WAP to input user first name & print its length.
+
+name = input("Enter your name: ")
+
+print("length of name= ", len(name))
 
 
-#String Functions
+# Q2 WAP to find occurrence of $ in a string 
 
-# 1  msg.endswith("elf")     # return True or False
-print(msg.endswith("elf"))  #True
-print(msg.endswith("amit")) #False
+demo = "Hey$ , whats$Going on $Are you enjoying . whats up buddy $$"
 
-
-# 2  msg.capitalize()       # capitalize  1st char
-print(msg.capitalize())
-
-
-# 3  msg.replace("old", "new")     # replace all occurrences of old
-print(msg.replace("Python", "React"))
-
-
-# 4  msg.find(word)    # return 1st index of 1st occurrer
-print(msg.find("a"))
-              
-
-# 5  msg.count()       # count the occurrences of substr
-print(msg.count("n"))
+print("total $ count", demo.count("$"))
