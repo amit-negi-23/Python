@@ -1,15 +1,12 @@
 # Conditional Statement 
 
-marks = int(input("enter student marks :"))
+age = 17
 
-if(marks >=90):
-    grade = "A"
-elif(marks<90 and marks>=80):
-    grade = "B"
-elif(marks<80 and marks>=70):
-    grade = "C"
+if(age>=18):
+    if(age>75):
+        print("Can not Drive now, you are above 75")
+    else:
+        print("Can Drive")
+        
 else:
-    grade = "D"
-    
-    
-print("grade of student ->", grade)
+    print("Can not drive, you'r below 18")
