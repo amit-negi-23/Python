@@ -1,23 +1,15 @@
 # Conditional Statement 
 
-age = 20
+marks = int(input("enter student marks :"))
 
-if(age>=18):
-    print("can vote")
+if(marks >=90):
+    grade = "A"
+elif(marks<90 and marks>=80):
+    grade = "B"
+elif(marks<80 and marks>=70):
+    grade = "C"
 else:
-    print("can't vote")
+    grade = "D"
     
-
-
-# example 2
-
-light = "green"
-
-if(light =="red"):
-    print("Stop")
-elif(light =="green"):
-    print("Go")
-elif(light == "yellow"):
-    print("Wait")
-else:
-    print("light is broken")
+    
+print("grade of student ->", grade)
