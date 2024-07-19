@@ -1,12 +1,6 @@
-# Tuple 
+# Tuple Method
 
-tup = (5, 4, 3, 2, 1)
-print(tup)
-print(type(tup))
-print(len(tup))
+tup = (2, 1, 3, 1)
 
-print(tup[1])
-
-
-# Tuple Slicing
-print(tup[0:2])
+print(tup.index(1))  # return index of first occurrence
+print(tup.count(1))  # count total occurrence
