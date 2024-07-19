@@ -25,3 +25,13 @@ else:
     
 # Note : if you want to compare the address ref use  ( is )
 print(copy_list1 is list1)
+
+
+
+# WAP to count the number of student with the "A" grade in the following tuple.
+
+tup = ["C", "D", "A", "A", "B", "B", "A"]
+print(tup.count("A"))
+
+tup.sort()
+print(tup)
