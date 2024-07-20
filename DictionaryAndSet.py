@@ -1,11 +1,16 @@
-# set.union()
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
-set_union = set1.union(set2)
-print(set_union)
+# Practice Question 
+
+# PQ 1 
+
+dictionay = {
+    "table": ["a piece of furniture", "list of facts & figure"],
+    "cat": "a small animal"
+}
+print(dictionay)
 
 
+# PQ 2
 
-# set.intersection()
-set_intersec = set1.intersection(set2)
-print(set_intersec)
+subjects = {"python", "java", "C++", "python", "javascript", "java", "python", "java", "C++", "C"}
+
+print("total classroom :", len(subjects))
