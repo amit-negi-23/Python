@@ -1,18 +1,14 @@
 # while loop Practice Question
 
+# PQ 5: 
+num = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 
-# PQ 3: Print a multiplication table of a number n.
-n= int(input("Create multiplication table of :"))
-k = 1
-while k<=10:
-    print(n*k)
-    k+=1
+x = 36
 
-
-# PQ 4: Print the element of following list using a loop
-num = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
-
-idx = 0
-while idx < len(num):
-    print(num[idx])
-    idx +=1
+i = 0
+while i < len(num):
+    if (num[i] == x):
+        print("Found at idx ", i)
+    else:
+        print("Finding..")
+    i+=1
