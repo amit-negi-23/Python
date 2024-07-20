@@ -1,16 +1,14 @@
+# Nested dictionary 
+
 student = {
     "name": "Amit Negi",
-    "email": "amitnegiit23@gmail.com",
-    "subject": ["python", "C", "Java"],
-    "topic": ("dict", "set"),
-    "age": 24,
-    "is_adult": True
+    "subject": {
+        "phy": 95,
+        "chem": 94,
+        "math": 98
+    }
 }
 
-print(student["name"])
-print(student["email"])
+print(student["subject"])
+print(student["subject"]["math"])
 
-student["name"] = "Radha"
-student["email"] = "radha@gmail.com"
-student["address"]= "Delhi"
-print(student)
