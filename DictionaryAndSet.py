@@ -8,3 +8,13 @@ student = {
 }
 
 print(student)
+print(student["name"])
+print(student["email"])
+
+
+
+print(type(student["name"]))
+print(type(student["subject"]))
+print(type(student["topic"]))
+print(type(student["age"]))
+print(type(student["is_adult"]))
