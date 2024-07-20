@@ -1,15 +1,18 @@
 # while loop Practice Question
 
-# PQ 1: Print number from 1 to 100
-i = 1
-while i <= 100:
-    print(i)
-    i+=1
-print("Printed 1 to 100 : code end")
 
-# PQ 2: Print number from 100 to 1
-j = 100
-while j >= 1:
-    print(j)
-    j-=1
-print("Printed 100 to 1 : code end")
+# PQ 3: Print a multiplication table of a number n.
+n= int(input("Create multiplication table of :"))
+k = 1
+while k<=10:
+    print(n*k)
+    k+=1
+
+
+# PQ 4: Print the element of following list using a loop
+num = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+idx = 0
+while idx < len(num):
+    print(num[idx])
+    idx +=1
