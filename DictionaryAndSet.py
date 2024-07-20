@@ -7,14 +7,10 @@ student = {
     "is_adult": True
 }
 
-print(student)
 print(student["name"])
 print(student["email"])
 
-
-
-print(type(student["name"]))
-print(type(student["subject"]))
-print(type(student["topic"]))
-print(type(student["age"]))
-print(type(student["is_adult"]))
+student["name"] = "Radha"
+student["email"] = "radha@gmail.com"
+student["address"]= "Delhi"
+print(student)
