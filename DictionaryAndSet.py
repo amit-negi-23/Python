@@ -1,16 +1,27 @@
 # Practice Question 
 
-# PQ 1 
+# PQ 3: 
 
-dictionay = {
-    "table": ["a piece of furniture", "list of facts & figure"],
-    "cat": "a small animal"
+marks = {}
+
+x = int(input("enter phy :"))
+marks.update({"phy": x})
+
+y = int(input("enter chem :"))
+marks.update({"chem": y})
+
+z = int(input("enter math :"))
+marks.update({"math": z})
+
+print(marks)
+
+
+#PQ 4:
+
+num = {
+    ("int", 9),
+    ("float", 9.0)
 }
-print(dictionay)
 
 
-# PQ 2
-
-subjects = {"python", "java", "C++", "python", "javascript", "java", "python", "java", "C++", "C"}
-
-print("total classroom :", len(subjects))
+print(num)
