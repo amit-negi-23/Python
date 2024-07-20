@@ -1,9 +1,10 @@
 # while loop
 
-# print number from 1 to 50
-i = 1
-while i <=50:
-    print(i)
-    i+=1
+# print number from 5 to 1
 
-print("Loop ended")
+i = 5
+while i >=1:
+    print(i)
+    i-=1
+    
+print("Loop end")
