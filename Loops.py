@@ -1,15 +1,9 @@
-# while loop Practice Question
+# Break and Continue
 
-# PQ 5: 
-num = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
-
-x = 36
-
-i = 0
-while i < len(num):
-    if (num[i] == x):
-        print("Found at idx ", i)
-        break
-    else:
-        print("Finding..")
+i =0 
+while i <=5:
+    if(i ==3):
+        i+=1
+        continue
+    print(i)
     i+=1
