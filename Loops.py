@@ -9,6 +9,7 @@ i = 0
 while i < len(num):
     if (num[i] == x):
         print("Found at idx ", i)
+        break
     else:
         print("Finding..")
     i+=1
