@@ -1,10 +1,18 @@
-# Break and Continue
+# For Loop
 
-# even numbers
-i =1 
-while i <=10:
-    if(i % 2 ==0):
-        i+=1
-        continue
-    print(i)
-    i+=1
+nums = [1, 2, 3, 4, 5]
+
+for val in nums:
+    print(val)
+    
+
+fruits = ("apple", "banana", "papaya", "mango","strawberry")
+
+for val in fruits:
+    print(val)
+
+
+name = "AmitNegi"
+
+for val in name:
+    print(val)
