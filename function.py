@@ -1,9 +1,6 @@
-# average of three number
+print("Hello","Amit", sep="-->", ) # sep = " " (default)
 
-def calc_avg(a, b, c):
-    sum = a + b + c
-    avg = sum/3
-    print(avg)
-    return avg
 
-calc_avg(6, 12, 15)
+
+print("Python",end="***")   # end= "\n"  (default)
+print("Javascript")
