@@ -1,5 +1,9 @@
-def print_hello():
-    print("hello")
+# average of three number
 
-output = print_hello()
-print(output) # if function do not return any thing , the default return value is None
+def calc_avg(a, b, c):
+    sum = a + b + c
+    avg = sum/3
+    print(avg)
+    return avg
+
+calc_avg(6, 12, 15)
