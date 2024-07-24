@@ -1,8 +1,24 @@
-# Recursion 
+# Practice Question 
 
-def calc_fact(n):
-    if(n==0 or n ==1):
-        return 1
-    return n * calc_fact(n-1)
+# PQ 1: Write a recursive function to calculate the sum of first n natural numbers.
 
-print(calc_fact(5))
+def calc_sum(num):
+    if(num == 0):
+        return 0
+    return num + calc_sum(num-1)
+    
+print(calc_sum(12))
+
+
+
+# PQ 2: Write a recursive function to print all elements in a list.
+
+cities = ["delhi", "mumbai", "hyderabad", "chennai", "gurgaon", "noida"]
+
+def show_list(list, idx=0):
+    if(idx == len(list)):
+        return
+    print(list[idx])
+    show_list(list, idx+1)
+    
+show_list(cities)
