@@ -1,6 +1,5 @@
-def calcSum(a, b):
-    sum = a +b 
-    return sum
+def print_hello():
+    print("hello")
 
-result = calcSum(15, 10)
-print(result)
+output = print_hello()
+print(output) # if function do not return any thing , the default return value is None
