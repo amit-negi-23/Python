@@ -1,9 +1,8 @@
 # Recursion 
 
-def show(n):
-    if(n==0):  # Base case
-        return
-    print(n)
-    show(n-1)
+def calc_fact(n):
+    if(n==0 or n ==1):
+        return 1
+    return n * calc_fact(n-1)
 
-show(5)
+print(calc_fact(5))
