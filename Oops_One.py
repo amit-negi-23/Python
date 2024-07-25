@@ -1,19 +1,21 @@
+# practice Question
+
 class Student:
-    
-    def __init__(self, name, email, age, phone):
+    def __init__(self, name, marks):
         self.name = name
-        self.email = email
-        self.age = age
-        self.phone = phone
-        
-    def welcome(self):
-        print("Welcome to Python,", self.name)
-    
-    def get_age(self):
-        return self.age
+        self.marks = marks
+
+    def get_avg(self):
+        sum =0
+        for val in self.marks:
+            sum+=val
+        print("Hi",self.name, "Your avg score is :", sum/3)
 
 
+s1 = Student("Amit Negi", [97, 92, 99])
+s1.get_avg()
 
-s1 = Student("Amit", "amit@gmail.com", 24, 9632587415)
-s1.welcome()
-print(s1.get_age())
+
+# Update
+s1.name="Rohit"
+s1.get_avg()
