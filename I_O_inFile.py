@@ -1,9 +1,3 @@
-with open("sample.txt", "r") as file:
-    data = file.read()
-    print(data)
-    file.close()
+import os
 
-
-with open("sample.txt", "w") as file:
-    file.write("Learning Python")
-    file.close()
+os.remove("test.py")
