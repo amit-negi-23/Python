@@ -1,6 +1,6 @@
-f = open("demo.txt", "r")
+# Write file
+file = open("demo.txt", "w")
 
-data = f.readline()
-print(data)
+file.write("learning I/O in python")
 
-f.close()
+file.close()

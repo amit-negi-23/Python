@@ -1,2 +1,1 @@
-I am Amit Negi
-I am learning Python 
+learning I/O in python
