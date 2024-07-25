@@ -1,6 +1,6 @@
 # Write file
-file = open("demo.txt", "w")
+file = open("demo.txt", "a")
 
-file.write("learning I/O in python")
+file.write("\nEnjoying very much ")
 
 file.close()
