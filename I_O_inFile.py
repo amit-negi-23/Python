@@ -1,6 +1,6 @@
 # If no file is present , then new file will be created
-file = open("sample.txt", "w+")
+file = open("sample.txt", "a+")
 
-file.write("Amit Negi")
+file.write(" is my name")
 
 file.close()
