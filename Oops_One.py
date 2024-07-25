@@ -6,10 +6,14 @@ class Student:
         self.age = age
         self.phone = phone
         
+    def welcome(self):
+        print("Welcome to Python,", self.name)
+    
+    def get_age(self):
+        return self.age
+
 
 
 s1 = Student("Amit", "amit@gmail.com", 24, 9632587415)
-print(s1.name, s1.email)
-
-s2 = Student("Rohit", "rohit@gmail.com", 28, 9874563214)
-print(s2.name, s2.email)
+s1.welcome()
+print(s1.get_age())
