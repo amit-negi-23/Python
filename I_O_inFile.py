@@ -1,6 +1,7 @@
-# Write file
-file = open("demo.txt", "a")
+# If no file is present , then new file will be created
+file = open("sample.txt", "w")
 
-file.write("\nEnjoying very much ")
+data = file.write("I am Learning Python from Youtube")
+print(data)
 
 file.close()
