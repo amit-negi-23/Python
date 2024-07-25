@@ -1,11 +1,10 @@
-#Pq 2: 
-with open("practice.txt", "r") as file:
+# PQ 3
+word = "learning"
+with open("practice.txt","r") as file:
     data = file.read()
-    file.close()
-    
-new_data = data.replace("Java", "Python")
-print(new_data)
-
-with open("practice.txt", "w") as file:
-    file.write(new_data)
-    file.close()
+    if(data.find(word) != -1):
+        print("Found")
+    else:
+        print("not found")
+        
+    file.close()   
