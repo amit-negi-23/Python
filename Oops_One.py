@@ -5,6 +5,10 @@ class Student:
         self.name = name
         self.marks = marks
 
+    @staticmethod
+    def hello():
+        print("hello")
+
     def get_avg(self):
         sum =0
         for val in self.marks:
@@ -15,6 +19,8 @@ class Student:
 s1 = Student("Amit Negi", [97, 92, 99])
 s1.get_avg()
 
+
+s1.hello()
 
 # Update
 s1.name="Rohit"
