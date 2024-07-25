@@ -1,6 +1,9 @@
-# If no file is present , then new file will be created
-file = open("sample.txt", "a+")
+with open("sample.txt", "r") as file:
+    data = file.read()
+    print(data)
+    file.close()
 
-file.write(" is my name")
 
-file.close()
+with open("sample.txt", "w") as file:
+    file.write("Learning Python")
+    file.close()
