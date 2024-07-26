@@ -1,24 +1,10 @@
-# Inheritance: When one class (child/ derived) derives the properties & method of another class (parent/ base).
+class Person:
+    name = "anonymous"
 
-class Car:
-    def __init__(self, type):
-        self.type = type
-    
-    @staticmethod
-    def start():
-        print("car started..")
-
-    @staticmethod
-    def stop():
-        print("car stopped.")
-
-
-class ToyotaCar(Car):
-    def __init__(self, name, type):
-        super().__init__(type)
-        self.name = name
-        # super().start()
-
-
-car1 = ToyotaCar("Fortuner", "electric")
-print(car1.type)
+    def changeName(self, name):
+        Person.name = name
+        
+p1 = Person()
+p1.changeName("Rahul")
+print(p1.name)
+print(Person.name)
