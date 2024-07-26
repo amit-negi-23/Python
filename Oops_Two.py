@@ -1,20 +1,15 @@
 # Inheritance: When one class (child/ derived) derives the properties & method of another class (parent/ base).
 
-class Car:
-    @staticmethod
-    def start():
-        print("car started..")
+class A:
+    varA = "Welcome to class A"
 
-    @staticmethod
-    def stop():
-        print("car stopped.")
+class B:
+    varB = "Welcome to class B"
+    
+class C(A, B):
+    varC = "welcome to class C"
 
-
-class ToyotaCar(Car):
-    def __init__(self,name):
-        self.name = name
-
-
-car1 = ToyotaCar("Fortuner")
-print(car1.name)
-car1.start()
+c1 = C()
+print(c1.varC)
+print(c1.varA)
+print(c1.varB)
