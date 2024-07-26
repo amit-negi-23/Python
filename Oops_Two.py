@@ -1,28 +1,43 @@
-# Polymorphism : 
+# Practice Question
 
-class Complex:
-    def __init__(self, real, img):
-        self.real = real
-        self.img = img
+# PQ 1:
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
         
-    def showNumber(self):
-        print(self.real,"i +",self.img, "j")
-        
-    def __add__(self, newNum):
-        newReal = self.real + newNum.real
-        newImg = self.img + newNum.img
-        return Complex(newReal, newImg)
-    
-    def __sub__(self, newNum):
-        newReal = self.real - newNum.real
-        newImg = self.img - newNum.img
-        return Complex(newReal, newImg)
-    
-num1 = Complex(2, 3)
-num1.showNumber()
+    def Area(self):
+        return 3.14 * (self.radius)**2
 
-num2 = Complex(4, 5)
-num2.showNumber()
+    def Perimeter(self):
+        return 2 * 3.14 * self.radius
 
-num3 = num1 - num2
-num3.showNumber()
+
+c1 = Circle(7)
+print(c1.Area())
+print(c1.Perimeter())
+
+
+# PQ 2:
+
+class Employee:
+    def __init__(self, role, dept, salary):
+        self.role = role
+        self.dept = dept
+        self.salary = salary
+
+    def showDetails(self):
+        print("role =", self.role)
+        print("dept =", self.dept)
+        print("salary =", self.salary)
+
+
+class Engineer(Employee):
+    def __init__(self, name, age):
+        super().__init__("Engineer", "IT", "75,000")
+        self.name = name
+        self.age = age
+
+
+engg1 = Engineer("Rohit", 25)
+print(engg1.name)
+engg1.showDetails()
