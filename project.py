@@ -1,20 +1,11 @@
 import random
+import string
 
-randomNum = random.randint(1, 100)
+pass_len = 8
+charValues = string.ascii_letters + string.digits + string.punctuation
 
-while True:
-    userInput = input("Guess the number or Quit :")
-    if(userInput == "Quit" or userInput == "quit"):
-        break
+password = ""
+for i in range(pass_len):
+    password += random.choice(charValues)
 
-    userInput = int(userInput)
-    if(userInput == randomNum):
-        print("Success: Correct Guess!!")
-        break
-    elif(userInput < randomNum):
-        print("your number  was to small. Take a bigger guess..")
-    else:
-        print("your number  was to big. Take a smaller guess..")
-
-
-print("------GAME OVER-------")
+print("your random password is:", password)
