@@ -2,7 +2,7 @@ class Person:
     name = "anonymous"
 
     def changeName(self, name):
-        Person.name = name
+        self.__class__.name = name
         
 p1 = Person()
 p1.changeName("Rahul")
