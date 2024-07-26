@@ -1,15 +1,24 @@
 # Inheritance: When one class (child/ derived) derives the properties & method of another class (parent/ base).
 
-class A:
-    varA = "Welcome to class A"
-
-class B:
-    varB = "Welcome to class B"
+class Car:
+    def __init__(self, type):
+        self.type = type
     
-class C(A, B):
-    varC = "welcome to class C"
+    @staticmethod
+    def start():
+        print("car started..")
 
-c1 = C()
-print(c1.varC)
-print(c1.varA)
-print(c1.varB)
+    @staticmethod
+    def stop():
+        print("car stopped.")
+
+
+class ToyotaCar(Car):
+    def __init__(self, name, type):
+        super().__init__(type)
+        self.name = name
+        # super().start()
+
+
+car1 = ToyotaCar("Fortuner", "electric")
+print(car1.type)
