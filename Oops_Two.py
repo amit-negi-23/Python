@@ -1,14 +1,20 @@
-class Account:
-    def __init__(self, acc_no, acc_pass):
-        self.acc_no = acc_no
-        self.__acc_pass = acc_pass  # private attribute
+# Inheritance: When one class (child/ derived) derives the properties & method of another class (parent/ base).
 
-    def show_pass(self):
-        print(self.__acc_pass)
+class Car:
+    @staticmethod
+    def start():
+        print("car started..")
+
+    @staticmethod
+    def stop():
+        print("car stopped.")
 
 
-acc1 = Account(2181, "abcd@123")
+class ToyotaCar(Car):
+    def __init__(self,name):
+        self.name = name
 
-print(acc1.acc_no)
-# print(acc1.acc_pass)          # cannot access acc_pass directly
-acc1.show_pass()
+
+car1 = ToyotaCar("Fortuner")
+print(car1.name)
+car1.start()
